@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { Suspense } from "react";
+import { Canvas } from "@react-three/fiber";
+import Loader from "../components/Loader";
+
 
 const Home = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <section className="w-full h-screen relative">
+    <Canvas className="w-full h-screen bg-transparent" camera={{near:0.1, far:1000}}>
+      <Suspense fallback={<Loader />}>
 
-export default Home
+      </Suspense>
+    </Canvas>
+     </section>;
+};
+
+export default Home;
