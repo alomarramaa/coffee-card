@@ -1,4 +1,4 @@
-Coffee Card is n website featuring an interactive, 3D coffee corner and drinks. The website features three main sections:
+Coffee Card is a website featuring an interactive, 3D coffee corner and drinks. The website features three main sections:
 
 1. The Home page, displaying a 3D coffee shop that the user can interact with.
 2. A Drinks page, with recipe cards that detail how to build popular drinks, such as iced vanilla lattes and pumpkin spice lattes. Each recipe card feautures a 3D model of the drink, creating a  videogame feel to the website.
