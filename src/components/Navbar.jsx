@@ -10,9 +10,8 @@ const Navbar = () => {
         to="/"
         className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
       >
-        <p className="blue-gradient_text">RA</p>
-      </NavLink> 
-
+        <p className="brown-gradient_text">RA</p>
+      </NavLink>
 
       <nav className="flex text-lg gap-7 font-medium">
         <NavLink
@@ -22,7 +21,8 @@ const Navbar = () => {
               ? //when you click on it, it'll turn brown. Otherwise, it's black
                 "text-amber-700"
               : "text-black"
-          }>
+          }
+        >
           About
         </NavLink>
 
@@ -35,12 +35,23 @@ const Navbar = () => {
           Syrups
         </NavLink>
 
-        <NavLink to="/drinks" className={({ isActive }) => isActive ? "text-amber-700" : "text-black"
-          }>
+        <NavLink
+          to="/drinks"
+          className={({ isActive }) =>
+            isActive ? "text-amber-700" : "text-black"
+          }
+        >
           Drinks
         </NavLink>
 
-
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "text-amber-700" : "text-black"
+          }
+        >
+          Contact
+        </NavLink>
       </nav>
     </header>
   );
