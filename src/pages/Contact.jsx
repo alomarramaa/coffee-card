@@ -47,12 +47,12 @@ const Contact = () => {
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text"> Get in Touch </h1>
+        <h1 className="head-text text-white"> Get in Touch </h1>
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
         >
-          <label className="text-black-500 font-semibold">
+          <label className="text-white font-semibold">
             Name
             <input
               type="text"
@@ -67,7 +67,7 @@ const Contact = () => {
             />
           </label>
 
-          <label className="text-black-500 font-semibold">
+          <label className="text-white font-semibold">
             Email
             <input
               type="email"
@@ -81,7 +81,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className="text-black-500 font-semibold">
+          <label className="text-white font-semibold">
             Your Message
             <textarea
               name="message"
