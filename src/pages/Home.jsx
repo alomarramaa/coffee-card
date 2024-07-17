@@ -1,18 +1,26 @@
 import React, { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
 import Loader from "../components/Loader";
-import { OrthographicCamera } from "@react-three/drei";
-import useSpline from "@splinetool/r3f-spline";
 import App from "../models/CoffeeCorner";
+import "@fontsource/italiana"; // Defaults to weight 400
+import CoffeeCorner from "../models/CoffeeCorner";
 
 const Home = () => {
   return (
-    <section className="w-full h-screen relative">
+    <section className="w-full h-screen relative flex items-start">
+    <h1 className="text-white font-italiana text-5xl ml-40 mt-60">
+      Coffee Card
+    </h1>
+    <div className="absolute left-40 top-1/3 transform -translate-y-1/2 text-white font-italiana text-2xl">
+        <div className="mb-2">Explore your favorite</div>
+        <div>caffeinated drinks</div>
+        <div>& syrup recipes</div>
+      </div>
 
-      <Suspense fallback={<Loader />}>
-      <App />
-      </Suspense>
-   
+      <div className="absolute inset-0 flex justify-center items-center">
+        <Suspense fallback={<Loader />}>
+          <CoffeeCorner />
+        </Suspense>
+      </div>
     </section>
   );
 };

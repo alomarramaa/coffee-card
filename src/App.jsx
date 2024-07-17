@@ -3,6 +3,7 @@
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
 import {Home, About, Drinks, Syrups, Contact} from "./pages";
 import Navbar from "./components/Navbar";
+import '@fontsource/italiana';
 
 const App = () => {
   return (
