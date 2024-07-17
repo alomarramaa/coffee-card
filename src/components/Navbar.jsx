@@ -20,7 +20,7 @@ const Navbar = () => {
             isActive
               ? //when you click on it, it'll turn brown. Otherwise, it's black
                 "text-amber-700"
-              : "text-black"
+              : "text-white"
           }
         >
           About
@@ -29,7 +29,7 @@ const Navbar = () => {
         <NavLink
           to="/syrups"
           className={({ isActive }) =>
-            isActive ? "text-amber-700" : "text-black"
+            isActive ? "text-amber-700" : "text-white"
           }
         >
           Syrups
@@ -38,7 +38,7 @@ const Navbar = () => {
         <NavLink
           to="/drinks"
           className={({ isActive }) =>
-            isActive ? "text-amber-700" : "text-black"
+            isActive ? "text-amber-700" : "text-white"
           }
         >
           Drinks
@@ -47,7 +47,7 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-amber-700" : "text-black"
+            isActive ? "text-amber-700" : "text-white"
           }
         >
           Contact

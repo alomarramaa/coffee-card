@@ -8,7 +8,7 @@ const App = () => {
   return (
 
     //<main style={{ backgroundColor: '#663D26' }}>
-  <main className="bg-slate-300/20">
+  <main className="bg-amber-900">
     <Router>
        <Navbar />
             <Routes>
