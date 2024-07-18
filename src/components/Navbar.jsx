@@ -6,14 +6,23 @@ const Navbar = () => {
   return (
     //Initial in upper left
     <header className="header">
-      <NavLink
+      {/* <NavLink
         to="/"
-        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md"
+        className="w-10 h-10 rounded-lg bg-white items-center justify-center flex font-bold shadow-md absolute right-10 -bottom-60 transform -translate-y-1/2"
       >
         <p className="brown-gradient_text">RA</p>
-      </NavLink>
+      </NavLink> */}
 
-      <nav className="flex text-lg gap-7 font-medium">
+      <nav className="flex justify-center w-full text-lg gap-7 font-medium">
+
+      <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive ? "text-amber-700" : "text-white"
+          }
+        >
+          Home
+        </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) =>
@@ -25,7 +34,7 @@ const Navbar = () => {
         >
           About
         </NavLink>
-
+        {/* 
         <NavLink
           to="/syrups"
           className={({ isActive }) =>
@@ -33,17 +42,18 @@ const Navbar = () => {
           }
         >
           Syrups
-        </NavLink>
+        </NavLink> */}
 
-        <NavLink
+        {/* <NavLink
           to="/drinks"
           className={({ isActive }) =>
             isActive ? "text-amber-700" : "text-white"
           }
         >
           Drinks
-        </NavLink>
+        </NavLink> */}
 
+      
         <NavLink
           to="/contact"
           className={({ isActive }) =>
