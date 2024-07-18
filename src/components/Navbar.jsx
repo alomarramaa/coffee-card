@@ -1,6 +1,7 @@
 //Create Navbar component
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Navbar.css"
 
 const Navbar = () => {
   return (
@@ -18,18 +19,16 @@ const Navbar = () => {
       <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-amber-700" : "text-white"
-          }
+            isActive ? "nav-link nav-link-active" : "nav-link"
+        }
         >
           Home
         </NavLink>
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive
-              ? //when you click on it, it'll turn brown. Otherwise, it's black
-                "text-amber-700"
-              : "text-white"
+            isActive ? "nav-link nav-link-active" : "nav-link"
+
           }
         >
           About
@@ -57,8 +56,8 @@ const Navbar = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-amber-700" : "text-white"
-          }
+            isActive ? "nav-link nav-link-active" : "nav-link"
+        }
         >
           Contact
         </NavLink>

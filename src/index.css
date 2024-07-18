@@ -11,8 +11,8 @@
 
 body {
   font-family: "Work Sans", sans-serif;
+  
 }
-
 body:has(.card[data-color="blue"]:hover) {
   background-color: rgb(var(--blue-rgb) / 25%);
 }
