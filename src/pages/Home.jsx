@@ -3,6 +3,7 @@ import Loader from "../components/Loader";
 import App from "../models/CoffeeCorner";
 import "@fontsource/italiana"; // Defaults to weight 400
 import CoffeeCorner from "../models/CoffeeCorner";
+import Dock from "../components/Dock";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <div className="absolute inset-0 flex justify-center items-center">
         <Suspense fallback={<Loader />}>
           <App />
+          <Dock/>
         </Suspense>
       </div>
     </section>
