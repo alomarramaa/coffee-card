@@ -48,18 +48,18 @@ const Contact = () => {
   return (
     <section className="relative flex lg:flex-row flex-col max-container">
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text text-white"> Get in Touch </h1>
+        <h1 className="head-text text-white font-italiana"> Get in Touch </h1>
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
         >
-          <label className="text-white font-semibold">
+          <label className="text-white font-semibold font-italiana">
             Name
             <input
               type="text"
               name="name"
               className="input"
-              placeholder="John Doe"
+              placeholder="Your Name"
               required
               value={form.name}
               onChange={handleChange}
@@ -68,13 +68,13 @@ const Contact = () => {
             />
           </label>
 
-          <label className="text-white font-semibold">
+          <label className="text-white font-semibold font-italiana">
             Email
             <input
               type="email"
               name="email"
               className="input"
-              placeholder="johndoe@gmail.com"
+              placeholder="Your Email"
               required
               value={form.email}
               onChange={handleChange}
@@ -82,7 +82,7 @@ const Contact = () => {
               onBlur={handleBlur}
             />
           </label>
-          <label className="text-white font-semibold">
+          <label className="text-white font-semibold font-italiana">
             Your Message
             <textarea
               name="message"
