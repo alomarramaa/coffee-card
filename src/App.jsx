@@ -22,7 +22,6 @@ const App = () => {
             </Routes>
             <Dock/>
     </Router>
-    
   </main>
   )
 }

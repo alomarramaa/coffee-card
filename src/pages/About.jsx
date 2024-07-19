@@ -3,26 +3,27 @@ import React from "react";
 const About = () => {
   return (
     <section className="max-container">
-      <div className="py-10 flex flex-col">
-        <h3 className="subhead-text text-center text-6xl">FAQ</h3>
+<h3 className="subhead-text text-center text-white" style={{ fontSize: '4rem'}}>FAQ</h3>
+<div className="py-10 flex flex-col">
+      
 
-        <div className="mt-5 flex flex-col gap-3 text-white text-2xl">
+        <div className="mt-5 flex flex-col gap-3 text-white text-2xl font-italiana">
           <p>What is Coffee Card?</p>
         </div>
 
         <div className="mt-5 flex flex-col gap-3 text-white text-lg">
           <p>
-            Coffee Card is a website featuring an interactive, 3D coffee corner
-            and drinks. The aim is to create a cozy corner for users to find
-            their favorite syrup and coffee recipes. 
+            Coffee Card is the Internet's cozy coffee corner, featuring interactive 3D 
+            models. It eliminates the clutter and frustration of trying to find
+             syrup and coffee recipes through endless Google searches, making it easy to recreate your favorite drinks at home. It also provides users with unique recipe ideas, and fun interactive models to play with.
           </p>
         </div>
 
-        <div className="mt-5 flex flex-col gap-3 text-white text-2xl">
+        <div className="mt-5 flex flex-col gap-3 text-white text-2xl font-italiana">
           <p>Where did you base your drink and syrup recipes from?</p>
         </div>
 
-        <div className="mt-5 flex flex-col gap-3 text-white text-lg">
+        <div className="mt-5 flex flex-col gap-3 text-white text-lg ">
           <p>
             All recipes are handmade by myself, and been vetted several times to
             test. Drink recipes are inspired by several coffee shops, but not a
@@ -30,7 +31,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mt-5 flex flex-col gap-3 text-white text-2xl">
+        <div className="mt-5 flex flex-col gap-3 text-white text-2xl font-italiana">
           <p>Is this website mobile-friendly? </p>
         </div>
 
@@ -41,7 +42,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="mt-5 flex flex-col gap-3 text-white text-2xl">
+        <div className="mt-5 flex flex-col gap-3 text-white text-2xl font-italiana">
           <p>What software did you use to create this website?</p>
         </div>
 
@@ -49,7 +50,7 @@ const About = () => {
           <p>
             All 3D models were designed and made by myself using Spline3D. Arts & graphics
             were made in Procreate on iPad Pro. For code, I used React and
-            tailwindcss.{" "}
+            tailwindcss. All other assets are available online for free public use. {" "}
           </p>
         </div>
       </div>
