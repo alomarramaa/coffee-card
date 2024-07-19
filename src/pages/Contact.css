@@ -1,0 +1,25 @@
+/* More specific selector */
+button.btn {
+    background-color: white !important; /* Solid background color */
+    background-image: none !important; /* Remove any gradient background */
+    color: #5d4037 !important; /* Dark brown text */
+    border: 1px solid #5d4037 !important; /* Dark brown border */
+    padding: 10px 20px !important; /* Adjust padding as needed */
+    border-radius: 5px !important; /* Rounded corners */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s !important; /* Smooth transition for hover effect */
+  }
+  
+  button.btn:disabled {
+    background-color: #f0f0f0 !important; /* Light grey background for disabled state */
+    color: #a0a0a0 !important; /* Grey text for disabled state */
+    border: 1px solid #a0a0a0 !important; /* Grey border for disabled state */
+    cursor: not-allowed !important; /* Not-allowed cursor for disabled state */
+  }
+  
+  button.btn:hover:not(:disabled) {
+    background-color: #5d4037 !important; /* Dark brown background on hover */
+    color: white !important; /* White text on hover */
+    border: 1px solid white !important; /* White border on hover */
+  }
+  

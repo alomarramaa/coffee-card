@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./Contact.css"
 
 const Contact = () => {
   const formRef = null;
@@ -96,14 +97,23 @@ const Contact = () => {
             />
           </label>
           <button
-            type="submit"
-            className="btn"
-            disabled={isLoading}
-            onFocus={handleFocus}
-            onBlur={handleBlur}
-          >
-            {isLoading ? "Sending..." : "Send Message"}
-          </button>
+  type="submit"
+  className="btn "
+  disabled={isLoading}
+  onFocus={handleFocus}
+  onBlur={handleBlur}
+  style={{
+    backgroundColor: 'white !important',
+    color: '#5d4037 !important',
+    border: '1px solid #5d4037 !important',
+    padding: '10px 20px !important',
+    borderRadius: '5px !important',
+    cursor: 'pointer !important'
+  }}
+>
+  Submit
+</button>
+
         </form>
       </div>
     </section>
