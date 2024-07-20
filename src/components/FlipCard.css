@@ -43,3 +43,11 @@
   object-position: center; /* Center the image within the container */
   border-radius: 10px; /* Optional: Add border-radius for rounded corners */
 }
+
+.card-container {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed to space out the cards */
+  align-items: center; /* Aligns items vertically center if needed */
+  flex-wrap: wrap; /* Wrap items to the next line if there's not enough space */
+  gap: 20px; /* Optional: Add space between the cards */
+}
