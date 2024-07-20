@@ -67,6 +67,8 @@ const About = () => {
         <div className="m-10 flex flex-col gap-3"> 
 
         </div>
+
+
       </div>
     </section>
   );

@@ -1,6 +1,10 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css"
+import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { FaGithub } from "react-icons/fa";
+
+
 
 const Contact = () => {
   const formRef = null;
@@ -46,9 +50,10 @@ const Contact = () => {
   const handleBlur = () => {};
 
   return (
+    
     <section className="relative flex lg:flex-row flex-col max-container">
       <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text text-white font-italiana"> Get in Touch </h1>
+        <h1 className="head-text text-white font-italiana items-center"> Get in Touch </h1>
         <form
           className="w-full flex flex-col gap-7 mt-14"
           onSubmit={handleSubmit}
@@ -104,7 +109,7 @@ const Contact = () => {
   onBlur={handleBlur}
   style={{
     backgroundColor: 'white !important',
-    color: '#5d4037 !important',
+    color: ' amber-900',
     border: '1px solid #5d4037 !important',
     padding: '10px 20px !important',
     borderRadius: '5px !important',
@@ -115,6 +120,10 @@ const Contact = () => {
 </button>
 
         </form>
+        <TiSocialLinkedinCircular size={50} color="#0077B5" />
+        <FaGithub />
+
+
       </div>
     </section>
   );
