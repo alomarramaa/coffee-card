@@ -2,8 +2,10 @@ import React from "react";
 import FlipCard from "../components/FlipCard";
 import vanillaImage from "../cards/Vanilla.png";
 import vanillaBackImage from "../cards/Vanilla-back.png";
-import caramelBackImage from "../cards/Caramel-Back.png"
-import mochaBackImage from "../cards/Mocha-Back.png"
+import caramelBackImage from "../cards/Caramel-Back.png";
+import mochaBackImage from "../cards/Mocha-Back.png";
+import { Link } from 'react-router-dom';
+
 
 const Drinks = () => {
   return (
@@ -37,13 +39,13 @@ const Drinks = () => {
         style={{ width: "500px", height: "auto" }}
       /> */}
 
-<div className="card-container">
-      <FlipCard frontImage={vanillaImage} backImage={vanillaBackImage} />
-      <FlipCard frontImage={caramelBackImage} backImage={caramelBackImage} />
-      <FlipCard frontImage={mochaBackImage} backImage={mochaBackImage} />
-    </div>
-
-
+      <div className="card-container">
+        <Link to="/vanilla">
+          <FlipCard frontImage={vanillaImage} backImage={vanillaBackImage} />
+        </Link>{" "}
+        <FlipCard frontImage={caramelBackImage} backImage={caramelBackImage} />
+        <FlipCard frontImage={mochaBackImage} backImage={mochaBackImage} />
+      </div>
     </section>
   );
 };

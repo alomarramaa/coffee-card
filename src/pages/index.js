@@ -3,7 +3,8 @@ import About from "./About";
 import Drinks from "./Drinks";
 import Syrups from "./Syrups";
 import Contact from "./Contact";
+import Vanilla from "./Vanilla";
 import '@fontsource/italiana';
 
 
-export{Home, About, Drinks, Syrups, Contact};
+export{Home, About, Drinks, Syrups, Contact, Vanilla};

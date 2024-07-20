@@ -14,7 +14,7 @@ const Navbar = () => {
         <p className="brown-gradient_text">RA</p>
       </NavLink> */}
 
-      <nav className="flex justify-center w-full text-2xl gap-7 font-medium font-italiana">
+      <nav className="flex justify-center w-full text-4xl gap-7 font-medium font-italiana">
 
       <NavLink
           to="/"

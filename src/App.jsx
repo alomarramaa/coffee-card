@@ -1,7 +1,7 @@
 
 //build app here
 import { Route, BrowserRouter as Router, Routes} from "react-router-dom";
-import {Home, About, Drinks, Syrups, Contact} from "./pages";
+import {Home, About, Drinks, Syrups, Contact, Vanilla} from "./pages";
 import Dock from "./components/Dock";
 import Navbar from "./components/Navbar";
 import '@fontsource/italiana';
@@ -19,6 +19,7 @@ const App = () => {
                 <Route path="/syrups" element={<Syrups />}/>
                 <Route path="/drinks" element={<Drinks />}/>
                 <Route path="/contact" element={<Contact />}/>
+                <Route path="/vanilla" element={<Vanilla />}/>
             </Routes>
             <Dock/>
     </Router>

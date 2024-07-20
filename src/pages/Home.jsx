@@ -8,10 +8,10 @@ import Dock from "../components/Dock";
 const Home = () => {
   return (
     <section className="w-full h-screen relative flex items-start">
-    <h1 className="text-white font-italiana text-6xl ml-60 mt-60">
+    <h1 className="text-white font-italiana text-8xl ml-60 mt-80">
       Coffee Card
     </h1>
-    <div className="absolute left-60 top-1/3 transform -translate-y-1/2 text-white font-italiana text-3xl">
+    <div className="absolute left-60 top-1/3 transform -translate-y-1/3 text-white font-italiana text-5xl">
         <div className="mb-2">Explore your favorite</div>
         <div>caffeinated drinks</div>
         <div>& syrup recipes at home</div>
