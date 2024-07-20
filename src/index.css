@@ -167,7 +167,7 @@ body:has(.card[data-color="green"]:hover) {
 
 /* Neo Brutalism */
 .neo-brutalism-blue {
-  background: #2b77e7;
+  : #2b77e7;
   position: relative;
   border-radius: 10px;
   border: #2b77e7;
