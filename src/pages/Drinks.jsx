@@ -4,9 +4,8 @@ import vanillaImage from "../cards/Vanilla.png";
 import vanillaBackImage from "../cards/Vanilla-back.png";
 import caramelBackImage from "../cards/Caramel-Back.png";
 import mochaBackImage from "../cards/Mocha-Back.png";
-import mochaFrontImage from "../cards/Mocha-Front.png"
-import { Link } from 'react-router-dom';
-
+import mochaFrontImage from "../cards/Mocha-Front.png";
+import { Link } from "react-router-dom";
 
 const Drinks = () => {
   return (
@@ -45,7 +44,9 @@ const Drinks = () => {
           <FlipCard frontImage={vanillaImage} backImage={vanillaBackImage} />
         </Link>{" "}
         <FlipCard frontImage={caramelBackImage} backImage={caramelBackImage} />
-        <FlipCard frontImage={mochaFrontImage} backImage={mochaBackImage} />
+        <Link to="/mocha">
+          <FlipCard frontImage={mochaFrontImage} backImage={mochaBackImage} />
+        </Link>{" "}
       </div>
     </section>
   );
