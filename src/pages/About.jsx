@@ -10,7 +10,7 @@ const About = () => {
         FAQ
       </h3>
       <div className="py-10 flex flex-col">
-        <div className="mt-5 flex flex-col gap-3 text-white text-2xl font-italiana">
+        <div className="mt-5 flex flex-col gap-3 text-white text-3xl font-italiana">
           <p>What is Coffee Card?</p>
         </div>
 

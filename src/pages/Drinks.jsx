@@ -1,8 +1,9 @@
 import React from "react";
 import FlipCard from "../components/FlipCard";
 import vanillaImage from "../cards/Vanilla.png";
-import vanillaBackImage from "../cards/Vanilla-back.png";
+import vanillaBackImage from "../cards/Vanilla-Back.png";
 import caramelBackImage from "../cards/Caramel-Back.png";
+import caramelImage from "../cards/Caramel-Front.png";
 import mochaBackImage from "../cards/Mocha-Back.png";
 import mochaFrontImage from "../cards/Mocha-Front.png";
 import { Link } from "react-router-dom";
@@ -43,7 +44,9 @@ const Drinks = () => {
         <Link to="/vanilla">
           <FlipCard frontImage={vanillaImage} backImage={vanillaBackImage} />
         </Link>{" "}
-        <FlipCard frontImage={caramelBackImage} backImage={caramelBackImage} />
+        <Link to="/caramel">
+          <FlipCard frontImage={caramelImage} backImage={caramelBackImage} />
+        </Link>
         <Link to="/mocha">
           <FlipCard frontImage={mochaFrontImage} backImage={mochaBackImage} />
         </Link>{" "}

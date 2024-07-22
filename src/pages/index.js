@@ -5,7 +5,8 @@ import Syrups from "./Syrups";
 import Contact from "./Contact";
 import Vanilla from "./Vanilla";
 import Mocha from "./Mocha";
+import Caramel from "./Caramel";
 import '@fontsource/italiana';
 
 
-export{Home, About, Drinks, Syrups, Contact, Vanilla, Mocha};
+export{Home, About, Drinks, Syrups, Contact, Vanilla, Mocha, Caramel};
