@@ -7,6 +7,8 @@ import Vanilla from "./Vanilla";
 import Mocha from "./Mocha";
 import Caramel from "./Caramel";
 import '@fontsource/italiana';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 export{Home, About, Drinks, Syrups, Contact, Vanilla, Mocha, Caramel};
