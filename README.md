@@ -1,8 +1,5 @@
-Here’s a README for your Coffee Card project based on the description you provided:
 
----
-
-# Coffee Card ☕️
+# Coffee Card 
 
 Coffee Card is an interactive website designed to give users a cozy, game-like experience while discovering and recreating their favorite coffee drinks and syrups. The website features a blend of 3D models, ambient music, and detailed recipes to simulate a welcoming coffee shop environment, perfect for coffee lovers and home baristas alike.
 
