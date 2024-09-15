@@ -57,7 +57,3 @@ The aim of Coffee Card is to combine a cozy coffee shop vibe with the excitement
 - Allow users to customize their coffee corner.
 - Expand the 3D interaction features for a richer user experience.
 
-
----
-
-Let me know if you’d like to modify anything!
