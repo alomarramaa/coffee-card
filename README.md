@@ -1,7 +1,7 @@
 
 # Coffee Card 
 
-Coffee Card is an interactive website designed to give users a cozy, game-like experience while discovering and recreating their favorite coffee drinks and syrups. The website features a blend of 3D models, ambient music, and detailed recipes to simulate a welcoming coffee shop environment, perfect for coffee lovers and home baristas alike.
+Coffee Card is an interactive website designed to give users a cozy, game-like experience while discovering and recreating their favorite coffee drinks and syrups, all at home. The website features a blend of 3D models, and detailed recipes to simulate a welcoming coffee shop environment, perfect for coffee lovers and home baristas alike.
 
 ## Features
 
@@ -9,20 +9,19 @@ Coffee Card is an interactive website designed to give users a cozy, game-like e
    - **Interactive 3D Coffee Shop**: Users are greeted by a 3D coffee corner where they can interact with elements of the scene, creating an immersive cafe experience.
 
 ### 2. **Drinks Page**
-   - **Recipe Cards**: Discover detailed instructions for crafting popular drinks like Iced Vanilla Latte, Pumpkin Spice Latte, and more.
-   - **3D Drink Models**: Each recipe card includes a 3D model of the drink, enhancing the experience with a video-game-like feel.
+   - **Recipe Cards**: Discover detailed instructions for crafting popular drinks like Iced Vanilla Lattes, Caramel Lattes, and more.
 
 ### 3. **Syrups Page**
-   - **Syrup Recipes**: Learn how to make popular coffee syrups at home, such as vanilla, caramel, and pumpkin spice.
+   - **Syrup Recipes**: Learn how to make popular coffee syrups at home, such as vanilla, caramel, and mochas.
 
 ## Goal
 The aim of Coffee Card is to combine a cozy coffee shop vibe with the excitement of a video game. It provides users with easy-to-follow recipes for popular drinks and syrups, allowing them to recreate their favorite beverages at home while enjoying a calming, interactive environment.
 
 ## Technologies Used
-- **React**: The front-end framework for building the user interface.
+- **React**
 - **Spline 3D**: Used for the interactive 3D models featured throughout the site.
-- **React Three Fiber**: For rendering the 3D coffee corner and drink models within the React environment.
-- **Tailwind CSS**: Styling framework for a modern and responsive layout.
+- **React Three Fiber**
+- **Tailwind CSS**
 
 ## Getting Started
 
