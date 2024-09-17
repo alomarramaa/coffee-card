@@ -23,7 +23,7 @@ const Home = () => {
       </div>
 
       <div className ="absolute right-60 top-1/3">
-           <Spotify />
+           {/* <Spotify /> */}
       </div>
 
       <div className="absolute inset-0 flex justify-center items-center">

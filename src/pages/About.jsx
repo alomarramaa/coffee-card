@@ -57,7 +57,7 @@ const About = () => {
           <p>
             All 3D models were designed and made by myself using Spline3D. Arts
             & graphics were made in Procreate on iPad Pro. For code, I used
-            React and tailwindcss. All other assets are available online for
+            React + Vite, and tailwindcss. All other assets are available online for
             free public use.
           </p>
         </div>
