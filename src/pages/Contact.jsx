@@ -3,6 +3,8 @@ import emailjs from "@emailjs/browser";
 import "./Contact.css"
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+
 
 
 
@@ -52,80 +54,94 @@ const Contact = () => {
   return (
     
     <section className="relative flex lg:flex-row flex-col max-container">
-      <div className="flex-1 min-w-[50%] flex flex-col">
-        <h1 className="head-text text-white font-italiana items-center"> Get in Touch </h1>
-        <form
-          className="w-full flex flex-col gap-7 mt-14"
-          onSubmit={handleSubmit}
+    <div className="flex-1 min-w-[50%] flex flex-col">
+    <h1 className="head-text text-white font-italiana text-3xl text-center">Get in Touch</h1>
+    <form className="w-full flex flex-col gap-7 mt-14" onSubmit={handleSubmit}>
+        <label className="text-white font-semibold font-italiana text-4xl">
+          Name
+          <input
+            type="text"
+            name="name"
+            className="input text-lg p-4 w-full"
+            placeholder="Your Name"
+            required
+            value={form.name}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+          />
+        </label>
+  
+        <label className="text-white font-semibold font-italiana text-4xl">
+          Email
+          <input
+            type="email"
+            name="email"
+            className="input text-lg p-4 w-full"
+            placeholder="Your Email"
+            required
+            value={form.email}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+          />
+        </label>
+  
+        <label className="text-white font-semibold font-italiana text-4xl">
+          Your Message
+          <textarea
+            name="message"
+            rows={4}
+            className="textarea text-lg p-4 w-full"
+            placeholder="Let me know how I can help you!"
+            required
+            value={form.message}
+            onChange={handleChange}
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+          />
+        </label>
+  
+        <button
+          type="submit"
+          className="btn text-lg p-4 bg-white text-amber-900 border border-solid border-[#5d4037] rounded-lg"
+          disabled={isLoading}
+          onFocus={handleFocus}
+          onBlur={handleBlur}
         >
-          <label className="text-white font-semibold font-italiana">
-            Name
-            <input
-              type="text"
-              name="name"
-              className="input"
-              placeholder="Your Name"
-              required
-              value={form.name}
-              onChange={handleChange}
-              onFocus={handleFocus}
-              onBlur={handleBlur}
-            />
-          </label>
+          Submit
+        </button>
+      </form>
 
-          <label className="text-white font-semibold font-italiana">
-            Email
-            <input
-              type="email"
-              name="email"
-              className="input"
-              placeholder="Your Email"
-              required
-              value={form.email}
-              onChange={handleChange}
-              onFocus={handleFocus}
-              onBlur={handleBlur}
-            />
-          </label>
-          <label className="text-white font-semibold font-italiana">
-            Your Message
-            <textarea
-              name="message"
-              rows={4}
-              className="textarea"
-              placeholder="Let me know how I can help you!"
-              required
-              value={form.message}
-              onChange={handleChange}
-              onFocus={handleFocus}
-              onBlur={handleBlur}
-            />
-          </label>
-          <button
-  type="submit"
-  className="btn "
-  disabled={isLoading}
-  onFocus={handleFocus}
-  onBlur={handleBlur}
-  style={{
-    backgroundColor: 'white !important',
-    color: ' amber-900',
-    border: '1px solid #5d4037 !important',
-    padding: '10px 20px !important',
-    borderRadius: '5px !important',
-    cursor: 'pointer !important'
-  }}
->
-  Submit
-</button>
+      <div className="flex justify-center gap-6 mt-8">
+  <a
+    href="https://www.linkedin.com/in/rama-al-omar/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white text-5xl hover:scale-110 transition-transform duration-200"
+  >
+    <TiSocialLinkedinCircular />
+  </a>
+  <a
+    href="https://github.com/alomarramaa"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-white text-5xl hover:scale-110 transition-transform duration-200"
+  >
+    <FaGithub />
+  </a>
+  <a
+    href="mailto:alomar.ramaa@gmail.com"
+    className="text-white text-5xl hover:scale-110 transition-transform duration-200"
+  >
+    <MdEmail />
+  </a>
+</div>
 
-        </form>
-        <TiSocialLinkedinCircular size={50} color="#0077B5" />
-        <FaGithub />
-
-
-      </div>
-    </section>
+    </div>
+  </section>
+  
+   
   );
 };
 
