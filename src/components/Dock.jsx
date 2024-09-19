@@ -7,7 +7,9 @@ const Dock = () => {
     // Add your icon URLs or images here
     { id: 1, name: '', icon: '/appIcons/hot-coffee.png', path: '/drinks'  },
     { id: 2, name: '', icon: '/appIcons/iced-coffee.png', path: '/drinks'  },
-    { id: 3, name: '', icon: '/appIcons/syrup.png',  path: '/syrups'  },
+   // { id: 3, name: '', icon: '/appIcons/syrup.png',  path: '/syrups'  },
+
+   
     // Add more items as needed
   ];
 

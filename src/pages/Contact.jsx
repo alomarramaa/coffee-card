@@ -113,7 +113,7 @@ const Contact = () => {
         </button>
       </form>
 
-      <div className="flex justify-center gap-6 mt-8">
+      <div className="flex justify-center gap-6 mt-16">
   <a
     href="https://www.linkedin.com/in/rama-al-omar/"
     target="_blank"

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import icedVanillaLatte from "../coffeeGraphics/icedvanillalatte.png";
 
 const VanillaPage = () => {
@@ -11,16 +11,13 @@ const VanillaPage = () => {
         >
           Vanilla
         </h3>
-        
-        <div className="mt-5 flex flex-col gap-3 text-white text-3xl font-italiana">
-          <p>
-            Explore an iced or hot version of this staple drink.
-          </p>
+
+        <div className="mt-5 flex flex-col gap-3 text-white text-3xl font-italiana items-center justify-center text-center">
+          <p>Explore an iced or hot version of this staple drink.</p>
         </div>
-        
+
         <div>
           <img src={icedVanillaLatte} alt="Iced Vanilla Latte" />
-  
         </div>
       </section>
     </div>
